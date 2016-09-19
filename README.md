@@ -38,16 +38,6 @@ Go to language that you want to use;
 
 ###For CPP
 
-####Sample Client Output
-````
-bsendir1@remote06:~/thrift-lab/cpp$ ./client
-ping()
-1 + 1 = 2
-InvalidOperation: Cannot divide by 0
-15 - 10 = 5
-Received log: 3F5FC93B338687BC7235B1AB103F47B3
-````
-
 ####Sample Server Output:
 ```
 bsendir1@remote06:~/thrift-lab/cpp$ ./server
@@ -63,6 +53,16 @@ calculate(1, 4)
 calculate(1, 2)
 getStruct(1)
 ```
+
+####Sample Client Output
+````
+bsendir1@remote06:~/thrift-lab/cpp$ ./client
+ping()
+1 + 1 = 2
+InvalidOperation: Cannot divide by 0
+15 - 10 = 5
+Received log: 3F5FC93B338687BC7235B1AB103F47B3
+````
 
 ###For JAVA
 
