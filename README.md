@@ -2,7 +2,7 @@
 Before cloning the repo make sure that thrift path is added to your PATH environment variable.
 
 ##Setting up the Environment
-####For bash
+####Type bash in your remote terminal
 ````
 export PATH=$PATH:/home/yaoliu/src_code/local/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/home/yaoliu/src_code/local/lib"
@@ -25,7 +25,7 @@ ___
 ##Running Examples
 1-) Clone the repo
 
-`git clone https://github.com/bedrisendir/thrift-lab.git`
+`git clone https://github.com/chaozhou5/thrift-lab.git`
 
 2-) Go to thrift-lab directory
 
@@ -40,7 +40,7 @@ Go to language that you want to use;
 
 ####Sample Server Output:
 ```
-bsendir1@remote06:~/thrift-lab/cpp$ ./server
+czhou5@remote00:~/thrift-lab/cpp$ ./server
 Starting the server...
 Incoming connection
 	SocketInfo: <Host: 127.0.0.1 Port: 38451>
@@ -56,7 +56,7 @@ getStruct(1)
 
 ####Sample Client Output
 ````
-bsendir1@remote06:~/thrift-lab/cpp$ ./client
+czhou5@remote00:~/thrift-lab/cpp$ ./client
 ping()
 1 + 1 = 2
 InvalidOperation: Cannot divide by 0
@@ -71,7 +71,7 @@ client usage : `./client [ip] [port]`
 
 ####Sample Server Output
 ```
-bsendir1@remote06:~/thrift-lab/java$ ./server.sh 9091
+czhou5@remote00:~/thrift-lab/java$ ./server.sh 9091
 Starting the simple server...
 ping()
 add(1,1)
@@ -82,7 +82,7 @@ getStruct(1)
 
 ####Sample Client Output
 ```
-bsendir1@remote06:~/thrift-lab/java$ ./client.sh localhost 9091
+czhou5@remote00:~/thrift-lab/java$ ./client.sh localhost 9091
 ping()
 1+1=2
 Invalid operation: Cannot divide by 0
