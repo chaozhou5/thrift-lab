@@ -89,3 +89,33 @@ Invalid operation: Cannot divide by 0
 15-10=5
 Check log: 5
 ```
+
+###For PYTHON
+
+You need to have the following lines in your program, be careful of current sys.path and gen-py directory:
+
+```` 
+sys.path.append('gen-py')
+sys.path.insert(0, glob.glob('/home/yaoliu/src_code/thrift/lib/py/build/lib.*')[0])
+````
+
+####Sample Server Output
+```
+czhou5@remote00:~/thrift-lab/py$ ./server.sh
+Starting the simple server...
+ping()
+add(1,1)
+calculate(1, Work(comment=None, num1=1, num2=0, op=4))
+calculate(1, Work(comment=None, num1=15, num2=10, op=2))
+getStruct(1)
+```
+
+####Sample Client Output
+```
+czhou5@remote00:~/thrift-lab/py$ ./client.sh
+ping()
+1+1=2
+InvalidOperation: InvalidOperation(whatOp=4, why='Cannot divide by 0')
+15-10=5
+Check log: 5
+```
